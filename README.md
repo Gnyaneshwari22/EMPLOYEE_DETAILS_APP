@@ -75,6 +75,32 @@ Welcome to the documentation for Create, Upadte,Read ,Delete operations using re
         
         4.EmpDetail :We access this component through the path '/employee/detail/:empid'. Within this component, it utilizes a "fetch" request to 'http://localhost:8000/employee/' with a specific empID as part of its functionality. This request is encapsulated within a "useEffect" hook, and the retrieved employee details are subsequently rendered on the user interface.
 
+
+SCREEN SHOTS OF APP
+
+Employees  List
+
+![Screenshot from 2023-09-22 13-18-31](https://github.com/Gnyaneshwari22/EMPLOYEE_DETAILS_APP/assets/90133856/50f2f017-c6e3-4d80-9a8c-5a435fe1c2e0)
+
+
+
+
+Creation of  New Employee
+
+![Screenshot from 2023-09-22 13-04-24](https://github.com/Gnyaneshwari22/EMPLOYEE_DETAILS_APP/assets/90133856/7e726b60-1f47-40e6-bde8-2aa080c5e35a)
+
+
+
+Editing the details of an exsisting Employee
+
+![Screenshot from 2023-09-22 13-11-25](https://github.com/Gnyaneshwari22/EMPLOYEE_DETAILS_APP/assets/90133856/22e3b46c-b3d9-44f9-88a9-6b21b879aa6b)
+
+
+Deletion of Employees details
+![Screenshot from 2023-09-22 13-19-22](https://github.com/Gnyaneshwari22/EMPLOYEE_DETAILS_APP/assets/90133856/f2c41686-347a-4b89-9148-e4bc0effd10e)
+
+
+
         
    
    
