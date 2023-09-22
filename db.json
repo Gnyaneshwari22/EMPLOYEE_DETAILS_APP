@@ -1,0 +1,31 @@
+{
+  "employee": [
+    {
+      "id": 3,
+      "name": "Shreyas Adki",
+      "email": "adkishreyas@gmail.com",
+      "phone": "+916361574105",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Bisu",
+      "email": "Bisu@gmail.com",
+      "phone": "+919663250227",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "vikram",
+      "email": "vikram@in.com",
+      "phone": "908908767"
+    },
+    {
+      "name": "Gnyaneshwari Adki",
+      "email": "adkignyaneshwari@gmail.com",
+      "phone": "+919663250227",
+      "active": true,
+      "id": 7
+    }
+  ]
+}

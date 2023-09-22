@@ -14,57 +14,67 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# PROJECT NAME:MY ASSIGNMENT FOR CURD OPERATIONS USING REACT JS 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Welcome to the documentation for Create, Upadte,Read ,Delete operations using react JS. This document provides information on how to install and use the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Introduction
+2. Working Flow
+3. Prerequisites
+4. API Reference
+  
+   
+   ## INRODUCTION
 
-### `npm run eject`
+   In my project, I employ the React library along with essential hooks like 'useState', 'useEffect', 'useParams', and 'useNavigate'. Additionally, I rely on the React Router library to facilitate UI navigation and leverage the JSON Server as a REST API to perform Create, Read, Update, and Delete (CRUD) operations on my local development server. To enhance the visual appeal and user experience, I incorporate the Bootstrap framework for styling throughout my React application.
+   
+  ## WORKING FLOW
+  
+  I.Set Up Your Project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   First, created a new React project and set up a JSON server for API. You can use create-react-app for the React app and json-server    for the API.
+   
+  II.Then, created my own JSON server API by creating a db.json file with some initial data
+  
+  III.Started the JSON server with command
+       json-server --watch db.json --port 8000
+       
+   IV.In App Component used Browser router for different routes .
+   
+   V.Created Components for CURD operations such as these cpmonents are explained in API reference section
+      1.EmpListing    2.EmpCreating   3.EmpEdit  4.EmpDetail  
+      
+      
+  VI.Testing: Testing the app by running npm start for the React app and json-server --watch db.json --port 8000 for the JSON server.
+      
+      
+      
+ ## PREREQUESITIONS 
+ 
+ 
+     1.Visual Studio Code IDE 
+     2.Creating React App using NPX 
+     3.Installing Bootstrap
+     4.Installing json-server     
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API REFERENCE:
 
-## Learn More
+     Using the above mentioned components I am able to make  API calls to perform CURD opeartion as explained below
+        1.EmpListing :The "EmpListing" component serves as the default route ('/') on the home page of the application. It utilizes the "useEffect" hook to initially fetch and display the current employee details on the user interface. This data is managed using the "useState" hook. To delete a specific employee's information, the "RemoveFunction" is invoked, which triggers a DELETE request to the endpoint "http://localhost:8000/employee" with the corresponding employee ID.
+  
+        2.EmpCreating :The "EmpCreating" component employs the Bootstrap Form class to facilitate the creation of employee records. It is accessible through the route "http://localhost:8000/employee/create" and employs the HTTP POST method to submit new employee details. Additionally, it leverages the "useState" hook to ensure that any modifications made to the data are accurately reflected on the user interface.
+        
+        3.EmpEdit: This component is accessible via the route ('/employee/edit/:empid'). It shares similarities with the "EmpCreating" component but differs in its functionality. Instead of creating new records, it utilizes the HTTP PUT method to update existing user details. This update is carried out through a "fetch" request to the endpoint "http://localhost:8000/employee/" along with the specific Employee ID. Additionally, it relies on the "useState" hook to ensure that any changes made to the data are promptly reflected on the user interface.
+        
+        
+        4.EmpDetail :We access this component through the path '/employee/detail/:empid'. Within this component, it utilizes a "fetch" request to 'http://localhost:8000/employee/' with a specific empID as part of its functionality. This request is encapsulated within a "useEffect" hook, and the retrieved employee details are subsequently rendered on the user interface.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+        
+   
+   

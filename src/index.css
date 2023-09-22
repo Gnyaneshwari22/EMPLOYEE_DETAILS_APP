@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.headerfont{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 4rem 6rem;
+  margin: 3px 3px;
+}
+
+.employeelist{
+ 
+  color: black;
+ 
+}
+.card-title{
+    text-align: center;
+    margin: 1rem;
+    font-size: 40px;
+    font-weight:500;
+}
+.form-group{
+   margin: 10px;
+   font-size: 20px;
+}
+.form-control{
+    margin-bottom: 5px;
+}
+.form-check{
+  padding: 2rem;
+}
+.editEmpoyee{
+  border-radius: 20%;
+}
+.card-body-details{
+      padding: 2rem;
+      margin: 1rem 1rem;
+      gap: 3rem;
+}
